@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bem-vindo! 😉</h1>
+    </header>
+    
+    <div class="container">
+        <div class="form-wrapper" id="formWrapper">
+            <!-- Tela de Login -->
+            <div class="form login">
+                <h2>Login</h2>
+                <input type="text" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button>Entrar</button>
+                <p onclick="showReset()">Esqueci minha senha</p>
+            </div>
+
+            <!-- Tela de Recuperação -->
+            <div class="form reset">
+                <h2>Recuperar Senha</h2>
+                <input type="email" placeholder="Seu e-mail">
+                <button>Enviar</button>
+                <p onclick="showLogin()">Voltar ao login</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
