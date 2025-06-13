@@ -1,6 +1,6 @@
 // Troca de formulários
 function showReset() {
-    document.getElementById("formWrapper").style.transform = "translateX(-400px)";
+    document.getElementById("formWrapper").style.transform = "translateX(-450px)";
 }
 
 function showLogin() {
