@@ -1,11 +1,23 @@
 // Troca de formulários
-function showReset() {
-    document.getElementById("formWrapper").style.transform = "translateX(-450px)";
+function showLogin() {
+    document.getElementById("login-form").style.transform = "translate(0, 0)";
+    document.getElementById("reset-form").style.transform = "translate(450px, 0)";
+    document.getElementById("register-form").style.transform = "translate(0, 450px)";
 }
 
-function showLogin() {
-    document.getElementById("formWrapper").style.transform = "translateX(0)";
+function showReset() {
+    document.getElementById("login-form").style.transform = "translate(-450px, 0)";
+    document.getElementById("reset-form").style.transform = "translate(0, 0)";
+    document.getElementById("register-form").style.transform = "translate(-450px, 450px)";
 }
+
+function showRegister() {
+    document.getElementById("login-form").style.transform = "translate(0, -450px)";
+    document.getElementById("reset-form").style.transform = "translate(450px, -450px)";
+    document.getElementById("register-form").style.transform = "translate(0, 0)";
+}
+showLogin(); // Garantir que começa no login
+
 
 // Mostrar/ocultar senha
 const input = document.getElementById('senha');

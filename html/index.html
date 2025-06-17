@@ -29,12 +29,14 @@
                         <i class="fas fa-user" id="eml"></i>
                         <div class="lh"></div>
                     </div>
+
                     <div class="input-group">
                         <input type="password" id="senha" placeholder=" " autocomplete="off" />
                         <label for="senha" class="input-label">Senha</label>
                         <i class="fas fa-lock" id="toggleSenha"></i>
                         <div class="lh"></div>
                     </div>
+
                     <div class="relember">
                         <label class="relember-password">
                             Lembrar senha?
@@ -42,6 +44,7 @@
                         </label>
                         <a href="#" id="show-reset" onclick="showReset()">Esqueci senha</a>
                     </div>
+
                     <div class="button-container">
                         <button type="submit">Login</button>
                     </div>
@@ -56,10 +59,10 @@
                         <button class="apple-btn">
                             <img src="../assets/apple.svg" alt="Apple Logo" class="icon" />Apple
                         </button>
-
                     </div>
+
                     <div class="register">
-                        <p>Não tem uma conta? <a href="#">Cadastra-se</a></p>
+                        <p>Não tem uma conta? <a href="#" onclick="showRegister()">Cadastra-se</a></p>
                     </div>
                 </form>
                 <!-- Tela de Recuperação -->
@@ -71,6 +74,7 @@
                         <i class="fas fa-envelope" id="eml"></i>
                         <div class="lh"></div>
                     </div>
+
                     <div class="input-group">
                         <input type="password" id="nova-senha" placeholder=" " autocomplete="off" />
                         <label for="senha" class="input-label">Senha</label>
@@ -84,13 +88,48 @@
                         <i class="fas fa-lock" id="reset-password"></i>
                         <div class="lh"></div>
                     </div>
+
                     <div class="button-container">
                         <button type="submit">Confirmar nova senha</button>
                     </div>
-                    <div style="text-align: center; margin-top: 20px;">
+
+                    <div id="back-to-login-container">
                         <a href="#" id="back-to-login" onclick="showLogin()">Voltar ao login</a>
                     </div>
                 </form>
+                <!-- Tela de cadastro -->
+                <form class="form register-form" id="register-form">
+                    <h2>Cadastro</h2>
+                    <div class="input-group">
+                        <input type="text" id="nome" placeholder=" " autocomplete="off" />
+                        <label for="nome" class="input-label">Nome completo</label>
+                        <i class="fas fa-user" id="eml"></i>
+                        <div class="lh"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="register-email" placeholder=" " autocomplete="off" />
+                        <label for="register-email" class="input-label">E-mail</label>
+                        <i class="fas fa-envelope" id="eml"></i>
+                        <div class="lh"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="register-senha" placeholder=" " autocomplete="off" />
+                        <label for="register-senha" class="input-label">Senha</label>
+                        <i class="fas fa-lock" id="reset-password"></i>
+                        <div class="lh"></div>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit">Criar conta</button>
+                    </div>
+
+                    <div id="back-to-login-container">
+                        <a href="#" id="back-to-login" onclick="showLogin()">Voltar ao login</a>
+                    </div>
+                </form>
+
             </div>
         </div>
     </main>

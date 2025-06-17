@@ -47,14 +47,20 @@ h2 {
 }
 
 .form-wrapper {
-    display: flex;
-    width: 900px;
-    transition: transform 0.5s ease-in-out;
+    width: 450px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
 }
 
 .form {
-    width: 450px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     padding: 20px;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
 }
 
 .input-group {
@@ -233,4 +239,9 @@ input:-webkit-autofill {
     top: 50%;
     transform: translateY(-50%);
     color: white;
+}
+
+#back-to-login-container {
+    text-align: center;
+    margin-top: 20px;
 }
